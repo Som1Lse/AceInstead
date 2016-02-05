@@ -133,7 +133,7 @@
                                    match[0].search(/^[a-d][hl]$/i) !== -1 ||
                                    match[0].search(/^[c-fs]s$/i) !== -1){
                                     tokens.push({'type': 'variable','value': eat(match[0])});
-                                }else if(match[0].search(/ptr|offset|flat|byte|(d|w|xmm|ymm)?word/i) !== -1){
+                                }else if(match[0].search(/^(ptr|offset|flat|byte|(d|w|xmm|ymm)?word)$/i) !== -1){
                                     tokens.push({'type': 'storage.type','value': eat(match[0])});
                                 }else{
                                     tokens.push({'type': 'identifier','value': eat(match[0])});
@@ -152,7 +152,8 @@
                             }else if(str[0] === '>' || str[0] === ')' || str[0] === ']' || str[0] === '}'){
                                 tokens.push({'type': 'paren.lparen','value': eat(1)});
                             }else if(str[0] === ',' || str[0] === '$' || str[0] === '%' || str[0] === '+' || 
-                                     str[0] === '*' || str[0] === ':' || str[0] === '!' || str[0] === '-'){
+                                     str[0] === '*' || str[0] === ':' || str[0] === '!' || str[0] === '-' ||
+                                     str[0] === '&' || str[0] === '~'){
                                 tokens.push({'type': 'punctuation.operator','value': eat(1)});
                             }else if(str[0] === '\"'){
                                 var i;
