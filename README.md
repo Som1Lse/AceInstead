@@ -6,4 +6,5 @@ In order to install the userscript you will first need a userscript plugin for y
 
 # Missing features (todo)
 Most features work as expected, but a few are missing. If you implement them feel free to submit a pull request.
+
 1. When using Binary mode, the address and opcodes of each instruction is not shown in the gutter.
