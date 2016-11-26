@@ -18,7 +18,7 @@
 // @resource    mode_rust_js        https://raw.githubusercontent.com/ajaxorg/ace-builds/master/src-noconflict/mode-rust.js
 // @resource    mode_c_cpp_js       https://raw.githubusercontent.com/ajaxorg/ace-builds/master/src-noconflict/mode-c_cpp.js
 // @resource    mode_golang_js      https://raw.githubusercontent.com/ajaxorg/ace-builds/master/src-noconflict/mode-golang.js
-// @version     2.0.0
+// @version     2.0.1
 // @grant       unsafeWindow
 // @grant       GM_getResourceText
 // @grant       GM_addStyle
