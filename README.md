@@ -1,3 +1,5 @@
+**This is no longer relevant (and hasn't been for a while) with Compiler Explorer using a [new editor](https://github.com/microsoft/monaco-editor).**
+
 # AceInstead.user.js for [gcc.godbolt.org](https://gcc.godbolt.org/)
 A [userscript](https://en.wikipedia.org/wiki/Greasemonkey) that replaces the editor used by gcc.godbolt.org ([CodeMirror](https://codemirror.net/)) with the editor [Ace](https://ace.c9.io/). This is achieved by replacing the interface provided by CodeMirror with an interface that emulates the functionality of CodeMirror but calls into Ace's interface instead. This results in a (subjectively) better editing experience.
 
